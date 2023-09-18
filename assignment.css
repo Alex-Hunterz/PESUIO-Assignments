@@ -41,7 +41,9 @@ input.nosubmit {
   height: 2rem;
   border: hidden;
   border-radius: 25px;
-  background-color: rgb(228, 226, 226);
+  background-color: rgb(240, 240, 240);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #555;
 }
 
 .farright {
@@ -183,4 +185,35 @@ input.nosubmit {
 .user2,
 .user3 {
   margin-top: 2rem;
+}
+
+/*Final touches*/
+.farright > button:hover {
+  cursor: pointer;
+}
+
+.story > .link > a {
+  color: grey;
+  text-decoration: none;
+}
+
+.fa-user:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.fa-star,
+.fa-bookmark,
+.fa-hands-clapping,
+.fa-comment:hover {
+  cursor: pointer;
 }
