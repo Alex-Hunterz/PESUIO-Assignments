@@ -6,11 +6,12 @@
 }
 
 .search {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 8fr 1fr;
   align-items: center;
-  border-bottom: solid lightgrey;
+  border-bottom: solid rgb(234, 233, 233);
   border-width: thin;
-  margin-bottom: 2.5rem;
+  margin-bottom: 5rem;
   /* padding-inline: ; */
   padding-bottom: 0.5rem;
 }
@@ -44,11 +45,13 @@ input.nosubmit {
   background-color: rgb(240, 240, 240);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: #555;
+  grid-column-start: initial;
+  /* margin-right: 65rem; */
 }
 
-.farright {
+/* .farright {
   display: flex;
-}
+} */
 
 .farright > button {
   display: flex;
@@ -103,6 +106,8 @@ input.nosubmit {
   flex-direction: column;
   padding-right: 7rem;
   overflow: hidden;
+  position: sticky;
+  top: 0;
 }
 
 .main .title {
@@ -216,4 +221,36 @@ a:hover {
 .fa-hands-clapping,
 .fa-comment:hover {
   cursor: pointer;
+}
+
+.medium {
+  height: 3rem;
+  margin-left: 1rem;
+  padding-right: 0.5rem;
+}
+
+.fa-pen-to-square {
+  display: flex;
+  /* width: 5rem; */
+}
+
+.farright {
+  display: flex;
+  justify-content: right;
+}
+
+.webdev {
+  display: flex;
+  flex-direction: column;
+  padding-right: 7rem;
+  /* overflow: hidden; */
+}
+
+#box {
+  position: sticky;
+  top: 0px;
+}
+
+@media screen and (max-width: 600px) {
+  
 }
